@@ -18,7 +18,7 @@ public class Main {
 		System.out.println("Informe seu telefone");
 		String tel = sc.next();
 		System.out.println("Informe seu endereço");
-		String  adress = sc.next();
+		String adress = sc.next();
 		System.out.println("Informe sua idade");
 		String age = sc.next();
 		
