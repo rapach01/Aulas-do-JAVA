@@ -16,7 +16,7 @@ public class Main {
 	public static void main(String[] args) {
 		//variables
 		int h, b;
-		//info
+		//print
 		h = Integer.parseInt(JOptionPane.showInputDialog("Informe a altura do retangulo: "));
 		b = Integer.parseInt(JOptionPane.showInputDialog("Informe a base do retangulo: "));
 		//print
