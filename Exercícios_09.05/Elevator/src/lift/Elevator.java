@@ -3,11 +3,12 @@ package lift;
 import javax.swing.JOptionPane;
 
 public class Elevator {
-
+	//attributes
 	private int people=0;
 	private int floor=0;
-	int op=0, i=0;
+	private int op=0, i=0;
 	
+	//switch method
 	void start() {
 		op = Integer.parseInt(JOptionPane.showInputDialog("(1)Entrar no Elevador\n(2)Subir\n(3)Descer\n(4)Sair"));
 		switch(op) {
@@ -26,7 +27,11 @@ public class Elevator {
 				break;
 			}
 			case 3:{
-				down();
+				if(floor == 1) {
+					JOptionPane.showMessageDialog(null, "Você está no primeiro andar");
+				}else {
+					down();
+				}
 				start();
 				break;
 			}
@@ -37,7 +42,7 @@ public class Elevator {
 			}
 		}
 	}
-	
+	//enter method
 	private void in() {
 		i = Integer.parseInt(JOptionPane.showInputDialog("Deseja entrar no elevador?\n(1)Sim\n(2)Não"));
 		
@@ -48,6 +53,7 @@ public class Elevator {
 		}
 		
 	}
+	//exit method
 	private void exit() {
 
 		i = Integer.parseInt(JOptionPane.showInputDialog("Deseja sair do elevador?\n(1)Sim\n(2)Não"));
@@ -58,6 +64,8 @@ public class Elevator {
 			people = 0;
 		}
 	}
+	
+	//up method
 	private void up() {
 		i = Integer.parseInt(JOptionPane.showInputDialog("Deseja subir quantos andares?\nLimite:8"));
 		switch(i) {
@@ -99,6 +107,8 @@ public class Elevator {
 			}
 		}
 	}
+	
+	//down method
 	private void down() {
 		i = Integer.parseInt(JOptionPane.showInputDialog("Deseja subir quantos andares?\nLimite:8"));
 		switch(i) {
