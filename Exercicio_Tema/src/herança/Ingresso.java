@@ -1,8 +1,8 @@
-package herança;
+/*package herança;
 
 import javax.swing.JOptionPane;
 
-public class Ingresso {
+public class Ingresso extends Ing{
 	//variavel do switch
 	private int op=0;
 	// chama as classes
@@ -36,11 +36,14 @@ public class Ingresso {
 				choices();
 				break;
 				}
+			case 5:{
+				JOptionPane.showMessageDialog(null, getNormal());
+			}
 			default:{
 				break;
 			}
 		}
 	}
 }
-
+*/
 

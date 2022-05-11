@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class CamaroteSuperior extends Ing {
 	//quantidade de ingressos superiores
-	int cs;
+	int cs, total;
 	void ingCS() {
 	//soma o valor da superior + o valor do normal setado na classe Ingresso
 		int priceCS = 80 + getPrice();
@@ -12,9 +12,9 @@ public class CamaroteSuperior extends Ing {
 		cs = Integer.parseInt(JOptionPane.showInputDialog("Deseja Comprar o Ingresso Superior?\n(1)Sim, quero comprar\n(2)Não"));
 	//soma a quantidade
 		if (cs==1) {
-			cs ++;
+			total ++;
 		}else {
-			cs = 0;
+			total = 0;
 		}
 	}
 }
