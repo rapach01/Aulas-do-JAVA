@@ -10,11 +10,10 @@ public class Ingresso {
 	private VIP v = new VIP();
 	private CamaroteInferior ci = new CamaroteInferior();
 	private CamaroteSuperior cs = new CamaroteSuperior();
-	private Print p = new Print();
 	
 	//menu
 	void choices() {
-		op = Integer.parseInt(JOptionPane.showInputDialog("Qual Ingresso deseja comprar?\n(1)Ingresso normal\n(2)Ingresso VIP\n(3)CamaroteInferior\n(4)Camarote Superior\n(5)Total de Ingressos Comprados\n(6)Sair"));
+		op = Integer.parseInt(JOptionPane.showInputDialog("Qual Ingresso deseja comprar?\n(1)Ingresso normal\n(2)Ingresso VIP\n(3)CamaroteInferior\n(4)Camarote Superior\n(5)Sair"));
 	//chama as classes correspondentes e repete tudo
 		switch(op) {
 			case 1:{
@@ -37,14 +36,11 @@ public class Ingresso {
 				choices();
 				break;
 				}
-			case 5:{
-				p.print();
-				choices();
-				break;
-			}
 			default:{
 				break;
 			}
 		}
 	}
 }
+
+

@@ -2,7 +2,7 @@ package herança;
 
 public class Ing {
 	//declara o preço do ingresso
-	private int price=20, normal=0, vip=0, ci=0, cs=0;
+	private int price=20, normal, vip, ci, cs;
 
 	public int getNormal() {
 		return normal;

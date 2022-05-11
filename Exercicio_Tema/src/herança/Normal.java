@@ -9,9 +9,5 @@ public class Normal extends Ing{
 		//printa o valor do ingresso normal
 		JOptionPane.showMessageDialog(null,"O valor do Ingresso normal é: " + getPrice());
 		normal = Integer.parseInt(JOptionPane.showInputDialog("Deseja Comprar o Ingresso normal?\n(1)Sim, quero comprar\n(2)Não"));
-		//soma os ingressos
-		if (normal==1) {
-			setNormal(1);
-		}
 	}
 }
