@@ -38,6 +38,7 @@ public class Main {
 						JOptionPane.showMessageDialog(null, "Ingressos Normais: " + n.total + "\nIngressos VIPs: " + v.total +"\nIngressos Inferiores: " + ci.total + "\nIngressos Superiores: " + cs.total );
 					}
 					default:{
+						c=6;
 						break;
 					}
 				}
