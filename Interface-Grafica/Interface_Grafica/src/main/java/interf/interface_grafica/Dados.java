@@ -12,7 +12,7 @@ import javax.swing.ListModel;
  * @author Aluno
  */
 public class Dados extends javax.swing.JFrame {
-    private String nome, end, cpf, tel;
+    private String nome, end, cpf, tel, age;
     public Dados() {
         initComponents();
     }
@@ -86,7 +86,7 @@ public class Dados extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
   
-    public void add(String nome, String end, String cpf, String tel){
+    public void add(String nome, String end, String cpf, String tel, String age){
            
          DefaultListModel<String> model = new DefaultListModel<String>();
          ListModel model2 = jlist_dados.getModel();
@@ -98,11 +98,13 @@ public class Dados extends javax.swing.JFrame {
          this.cpf = cpf;
          this.tel = tel;
          this.end = end;
+         this.age = age;
          
          model.addElement(this.nome);
          model.addElement(this.cpf);
          model.addElement(this.end);
          model.addElement(this.tel);
+         model.addElement(this.age);
 
          jlist_dados.setModel(model);
 }
